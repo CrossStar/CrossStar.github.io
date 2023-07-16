@@ -16,22 +16,22 @@
   <meta name="author" content="Sydney">
   <meta name="keywords" content="">
   
-    <meta name="description" content="我一直是很喜欢下雨的，雨天总有一种宁静的感觉。 但今天的宁静的雨却和不宁静的心情相悖，不知道为什么，心中之事总是说不清道不明。 小时候，我呆在房间里，只用听窗外的雨滴答在阳台外铁质的遮阳棚上的声音，就能够很快入睡。 但夏天的雨并不以我的心情降落，很多时候，我就开着空调，想象着空调外机冷凝水落在棚上的声音是雨的声音，倒也有出奇的效果。 与其说睡不着，倒不如说不愿和屋外的雨分别。 想好好听听窗外的雨。">
+    <meta name="description" content="网页的基础信息 在浏览器中的某个页面，我们可以通过F12来找到有关这个页面的html信息 其中在这一课，最需要注意的是Network中的 request headers和response headers 这两个分别代表了用户向服务器发送请求时包含的头部封装信息和服务器返回的头部封装信息 比如在(https:&#x2F;&#x2F;www.douban.com)中，我们作为用户请求的request headers是：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在一个普通的夏夜">
-<meta property="og:url" content="http://example.com/2023/07/14/%E5%9C%A8%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%E7%9A%84%E5%A4%8F%E5%A4%9C/index.html">
+<meta property="og:title" content="urllib库的使用">
+<meta property="og:url" content="http://example.com/2023/07/16/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="小智的秘密基地">
-<meta property="og:description" content="我一直是很喜欢下雨的，雨天总有一种宁静的感觉。 但今天的宁静的雨却和不宁静的心情相悖，不知道为什么，心中之事总是说不清道不明。 小时候，我呆在房间里，只用听窗外的雨滴答在阳台外铁质的遮阳棚上的声音，就能够很快入睡。 但夏天的雨并不以我的心情降落，很多时候，我就开着空调，想象着空调外机冷凝水落在棚上的声音是雨的声音，倒也有出奇的效果。 与其说睡不着，倒不如说不愿和屋外的雨分别。 想好好听听窗外的雨。">
+<meta property="og:description" content="网页的基础信息 在浏览器中的某个页面，我们可以通过F12来找到有关这个页面的html信息 其中在这一课，最需要注意的是Network中的 request headers和response headers 这两个分别代表了用户向服务器发送请求时包含的头部封装信息和服务器返回的头部封装信息 比如在(https:&#x2F;&#x2F;www.douban.com)中，我们作为用户请求的request headers是：">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-07-13T18:28:26.000Z">
-<meta property="article:modified_time" content="2023-07-13T18:35:16.108Z">
+<meta property="article:published_time" content="2023-07-16T08:50:52.000Z">
+<meta property="article:modified_time" content="2023-07-16T09:52:33.722Z">
 <meta property="article:author" content="Sydney">
-<meta property="article:tag" content="thought">
+<meta property="article:tag" content="notes">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>在一个普通的夏夜 - 小智的秘密基地</title>
+  <title>urllib库的使用 - 小智的秘密基地</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -203,7 +203,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="在一个普通的夏夜"></span>
+            <span id="subtitle" data-typed-text="urllib库的使用"></span>
           
         </div>
 
@@ -214,8 +214,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-07-14 02:28" pubdate>
-          2023年7月14日 凌晨
+        <time datetime="2023-07-16 16:50" pubdate>
+          2023年7月16日 下午
         </time>
       </span>
     
@@ -226,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          195 字
+          1.7k 字
         
       </span>
     
@@ -265,12 +265,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">在一个普通的夏夜</h1>
+            <h1 id="seo-header">urllib库的使用</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年7月14日 凌晨
+                    本文最后更新于：2023年7月16日 下午
                   
                 
               </p>
@@ -278,12 +278,34 @@
             
               <div class="markdown-body">
                 
-                <p>我一直是很喜欢下雨的，雨天总有一种宁静的感觉。</p>
-<p>但今天的宁静的雨却和不宁静的心情相悖，不知道为什么，心中之事总是说不清道不明。</p>
-<p>小时候，我呆在房间里，只用听窗外的雨滴答在阳台外铁质的遮阳棚上的声音，就能够很快入睡。</p>
-<p>但夏天的雨并不以我的心情降落，很多时候，我就开着空调，想象着空调外机冷凝水落在棚上的声音是雨的声音，倒也有出奇的效果。</p>
-<p>与其说睡不着，倒不如说不愿和屋外的雨分别。</p>
-<p>想好好听听窗外的雨。</p>
+                <h2 id="网页的基础信息">网页的基础信息</h2>
+<p>在浏览器中的某个页面，我们可以通过F12来找到有关这个页面的html信息</p>
+<p>其中在这一课，最需要注意的是Network中的 request headers和response headers</p>
+<p>这两个分别代表了<u>用户向服务器发送请求时包含的头部封装信息</u>和<u>服务器返回的头部封装信息</u></p>
+<p>比如在(<a target="_blank" rel="noopener" href="https://www.douban.com">https://www.douban.com</a>)中，我们作为用户请求的request headers是：</p>
+<p>![](D:\Blog\blog\source_posts\urllib库的使用\request headers.png)</p>
+<p>注意User-Agent，如果在操作中不进行任何操作，许多网站会进行识别从而拒绝访问</p>
+<h2 id="Urllib库的基础操作">Urllib库的基础操作</h2>
+<h3 id="发起请求（get方式）">发起请求（get方式）</h3>
+<p>在Urllib中，如果想以get方式直接发起对某个网站的请求，可以：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> urllib.request<br><br>response = urllib.request.urlopen(<span class="hljs-string">&quot;http://www.baidu.com&quot;</span>)<br><span class="hljs-built_in">print</span>(response.read().decode(<span class="hljs-string">&quot;utf-8&quot;</span>))<br></code></pre></td></tr></table></figure>
+<p>其中，urlopen( )函数创建了一个请求（request）对象，然后在print( )函数中被read( )函数读取，decode( )意为以何种方式解码，在此程序中以“utf-8”的方式</p>
+<h3 id="发起请求（post方式）">发起请求（post方式）</h3>
+<p>以post方式发起请求，代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> urllib.request<br><span class="hljs-keyword">import</span> urllib.parse<br><br>my_data = <span class="hljs-built_in">bytes</span>(urllib.parse.urlencode(&#123;<span class="hljs-string">&quot;hello&quot;</span>:<span class="hljs-string">&quot;world&quot;</span>&#125;),encoding = <span class="hljs-string">&quot;utf-8&quot;</span>)<br>response = urllib.request.urlopen(<span class="hljs-string">&quot;http://www.baidu.com&quot;</span>,data = my_data)<br><span class="hljs-built_in">print</span>(response.read().decode(<span class="hljs-string">&quot;utf-8&quot;</span>))<br></code></pre></td></tr></table></figure>
+<p>如果需要以post发出请求，则需要在urlopen( )函数中增加data参数，包含可以经过bytes( ),urlencode( )等函数进行封装的对象</p>
+<h2 id="异常处理">异常处理</h2>
+<p>这里只介绍超时(timeout)异常</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> urllib.request<br><br>response = urllib.request.urlopen(<span class="hljs-string">&quot;http://www.baidu.com&quot;</span>,timeout = <span class="hljs-number">3</span>)<br><span class="hljs-built_in">print</span>(response.read().decode(<span class="hljs-string">&quot;utf-8&quot;</span>))<br></code></pre></td></tr></table></figure>
+<p>这段代码的意思是，如果服务器在3s内没有相应，那么报错：</p>
+<p>urllib.error.URLError: <urlopen error timed out></p>
+<p>事实上，我们可以通过异常处理来处理这些错误</p>
+<h3 id="信息的封装">信息的封装</h3>
+<p>urllib库允许在请求时同时封装一系列信息，代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> urllib.request<br><br>my_url = <span class="hljs-string">&quot;https://www.douban.com&quot;</span><br>headers = &#123;<br>    <span class="hljs-string">&quot;User-Agent&quot;</span>:<span class="hljs-string">&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/114.0.0.0 Safari/537.36&quot;</span><br>&#125;<br><br>req = urllib.request.Request(url = url, headers = headers)<br>response = urllib.request.urlopen(req)<br><span class="hljs-built_in">print</span>(response.read().decode(<span class="hljs-string">&quot;utf-8&quot;</span>))<br></code></pre></td></tr></table></figure>
+<p>在headers里，可以封装一系列内容，比如说在这里封装了User-Agent的信息，用来对自身进行伪装。</p>
+<p>实际上还可以封装很多其他的信息</p>
+<p>在这里是使用get方式请求，如果需要以post方式请求，可以在Request参数里增加data的参数</p>
 
                 
               </div>
@@ -296,7 +318,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/thought/" class="print-no-link">#thought</a>
+        <a href="/tags/notes/" class="print-no-link">#notes</a>
       
     </div>
   
@@ -308,8 +330,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>在一个普通的夏夜</div>
-      <div>http://example.com/2023/07/14/在一个普通的夏夜/</div>
+      <div>urllib库的使用</div>
+      <div>http://example.com/2023/07/16/urllib库的使用/</div>
     </div>
     <div class="license-meta">
       
@@ -321,7 +343,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年7月14日</div>
+          <div>2023年7月16日</div>
         </div>
       
       
@@ -353,18 +375,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/07/16/urllib%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/" title="urllib库的使用">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">urllib库的使用</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/12/%E7%AC%AC%E4%BA%94%E7%AB%A0%EF%BC%9A%E7%95%99%E6%95%B0/" title="第五章：留数">
-                        <span class="hidden-mobile">第五章：留数</span>
+                      <a href="/2023/07/14/%E5%9C%A8%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%E7%9A%84%E5%A4%8F%E5%A4%9C/" title="在一个普通的夏夜">
+                        <span class="hidden-mobile">在一个普通的夏夜</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
