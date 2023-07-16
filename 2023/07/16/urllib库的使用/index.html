@@ -24,7 +24,7 @@
 <meta property="og:description" content="网页的基础信息 在浏览器中的某个页面，我们可以通过F12来找到有关这个页面的html信息 其中在这一课，最需要注意的是Network中的 request headers和response headers 这两个分别代表了用户向服务器发送请求时包含的头部封装信息和服务器返回的头部封装信息 比如在(https:&#x2F;&#x2F;www.douban.com)中，我们作为用户请求的request headers是：">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-07-16T08:50:52.000Z">
-<meta property="article:modified_time" content="2023-07-16T09:52:33.722Z">
+<meta property="article:modified_time" content="2023-07-16T09:55:34.390Z">
 <meta property="article:author" content="Sydney">
 <meta property="article:tag" content="notes">
 <meta name="twitter:card" content="summary_large_image">
@@ -283,7 +283,7 @@
 <p>其中在这一课，最需要注意的是Network中的 request headers和response headers</p>
 <p>这两个分别代表了<u>用户向服务器发送请求时包含的头部封装信息</u>和<u>服务器返回的头部封装信息</u></p>
 <p>比如在(<a target="_blank" rel="noopener" href="https://www.douban.com">https://www.douban.com</a>)中，我们作为用户请求的request headers是：</p>
-<p>![](D:\Blog\blog\source_posts\urllib库的使用\request headers.png)</p>
+<p>![](.\urllib库的使用\request headers.png)</p>
 <p>注意User-Agent，如果在操作中不进行任何操作，许多网站会进行识别从而拒绝访问</p>
 <h2 id="Urllib库的基础操作">Urllib库的基础操作</h2>
 <h3 id="发起请求（get方式）">发起请求（get方式）</h3>
@@ -298,7 +298,7 @@
 <p>这里只介绍超时(timeout)异常</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> urllib.request<br><br>response = urllib.request.urlopen(<span class="hljs-string">&quot;http://www.baidu.com&quot;</span>,timeout = <span class="hljs-number">3</span>)<br><span class="hljs-built_in">print</span>(response.read().decode(<span class="hljs-string">&quot;utf-8&quot;</span>))<br></code></pre></td></tr></table></figure>
 <p>这段代码的意思是，如果服务器在3s内没有相应，那么报错：</p>
-<p>urllib.error.URLError: <urlopen error timed out></p>
+<p>urllib.error.URLError: &lt;urlopen error timed out&gt;</p>
 <p>事实上，我们可以通过异常处理来处理这些错误</p>
 <h3 id="信息的封装">信息的封装</h3>
 <p>urllib库允许在请求时同时封装一系列信息，代码如下：</p>
