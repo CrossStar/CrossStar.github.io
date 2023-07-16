@@ -23,14 +23,14 @@
 <meta property="og:site_name" content="小智的秘密基地">
 <meta property="og:description" content="文档的分类 BeautifulSoup把html文件内容解析为一个树状结构，由以下四种对象组成： Tag，NavigableString，BeautifulSoup，Comment  Tag也就是标签，参考如下的代码：  1234567from bs4 import BeautifulSoupfile &#x3D; open(&quot;.&#x2F;douban.html&quot;)my_html &#x3D; file.">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2023/07/16/BeautifulSoup%E5%BA%93%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80/BeautifulSoup%E5%BA%93%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80/select1.png">
-<meta property="og:image" content="http://example.com/2023/07/16/BeautifulSoup%E5%BA%93%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80/BeautifulSoup%E5%BA%93%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80/select2.png">
+<meta property="og:image" content="http://example.com/2023/07/16/BeautifulSoup%E5%BA%93%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80/select1.png">
+<meta property="og:image" content="http://example.com/2023/07/16/BeautifulSoup%E5%BA%93%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80/select2.png">
 <meta property="article:published_time" content="2023-07-16T13:49:49.000Z">
-<meta property="article:modified_time" content="2023-07-16T15:12:11.118Z">
+<meta property="article:modified_time" content="2023-07-16T15:19:55.055Z">
 <meta property="article:author" content="Sydney">
 <meta property="article:tag" content="notes">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/2023/07/16/BeautifulSoup%E5%BA%93%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80/BeautifulSoup%E5%BA%93%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80/select1.png">
+<meta name="twitter:image" content="http://example.com/2023/07/16/BeautifulSoup%E5%BA%93%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80/select1.png">
   
   
   
@@ -338,7 +338,7 @@
 <p>③传入一个正则表达式，只要标签中含有正则表达式中的字符串，那么就把它存入列表</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">t_list = bs.find_all(re.<span class="hljs-built_in">compile</span>(<span class="hljs-string">&quot;a&quot;</span>))<br></code></pre></td></tr></table></figure>
 <p>④传入一个方法，便于自定义</p>
-<figure class="highlight ceylon"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs ceylon">def name<span class="hljs-number">_</span><span class="hljs-keyword">is</span><span class="hljs-number">_</span><span class="hljs-keyword">exists</span>(tag):<br>	<span class="hljs-keyword">return</span> tag.has<span class="hljs-number">_</span>attr(<span class="hljs-string">&quot;name&quot;</span>)<br>	<br>t<span class="hljs-number">_</span>list = bs.find<span class="hljs-number">_</span>all(name<span class="hljs-number">_</span><span class="hljs-keyword">is</span><span class="hljs-number">_</span><span class="hljs-keyword">exists</span>)<br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">name_is_exists</span>(<span class="hljs-params">tag</span>):<br>	<span class="hljs-keyword">return</span> tag.has_attr(<span class="hljs-string">&quot;name&quot;</span>)<br>	<br>t_list = bs.find_all(name_is_exists)<br></code></pre></td></tr></table></figure>
 <p>只要标签属性中含有name，就把标签存入列表中</p>
 <ul>
 <li>kwargs参数，可以针对标签的属性查找</li>
@@ -362,8 +362,8 @@
 <p>输出前三个含有”a“的标签</p>
 <h3 id="CSS选择器（select-）方法">CSS选择器（select( )）方法</h3>
 <p>select( )方法返回一个列表，因此可以对返回的列表进行相应的操作</p>
-<img src=".\BeautifulSoup库应用基础\select1.png" srcset="/img/loading.gif" lazyload style="zoom:80%;" />
-<img src=".\BeautifulSoup库应用基础\select2.png" srcset="/img/loading.gif" lazyload style="zoom:80%;" />
+<img src="/2023/07/16/BeautifulSoup%E5%BA%93%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80/select1.png" srcset="/img/loading.gif" lazyload class="">
+<img src="/2023/07/16/BeautifulSoup%E5%BA%93%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80/select2.png" srcset="/img/loading.gif" lazyload class="">
 
                 
               </div>
