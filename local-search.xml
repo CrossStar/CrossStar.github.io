@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>土地</title>
+    <link href="/2023/08/23/%E5%9C%9F%E5%9C%B0/"/>
+    <url>/2023/08/23/%E5%9C%9F%E5%9C%B0/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>​我们都从土地中来。</p><p>​“女娲造人”的故事每个人都听说过。和西方神话中亚当夏娃等对人类的诞生的想象不同，古时的生活在这片土地上的人认为自己是被女娲用泥捏出来的。</p><p>​土地是每个人的母亲。</p><p>​活着的时候我们吃掉其他生活在这片土地上的兄弟姐妹的肉体，死去之后我们的肉体骨骼也必须被它们蚕食。这是一种等价交换。</p><p>​所以土地是什么呢？是清风，是虫鸣，是爱，是性，是神圣，是一切具象的抽象总和。</p><p>​</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>thoughts</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>相信</title>
     <link href="/2023/08/20/%E7%9B%B8%E4%BF%A1/"/>
     <url>/2023/08/20/%E7%9B%B8%E4%BF%A1/</url>
@@ -27,7 +46,7 @@
     <link href="/2023/08/20/%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0%EF%BC%9A%E7%A8%B3%E6%81%92%E7%94%B5%E6%B5%81/"/>
     <url>/2023/08/20/%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0%EF%BC%9A%E7%A8%B3%E6%81%92%E7%94%B5%E6%B5%81/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="稳恒电流">稳恒电流</h2><p>电流强度：</p><p class='katex-block katex-error ' title='ParseError: KaTeX parse error: Unexpected end of input in a macro argument, expected &#039;}&#039; at end of input: I = \frac'>I = \frac</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><pre><code class=" mermaid">graph LRALL[稳恒电流] --&gt; A1[稳恒电流]A1 --&gt; B1[电流强度]A1 --&gt; B2[电流密度] --&gt; C1[电流密度和漂移速度的关系]A1 --&gt; B3[稳恒电流和稳恒电场]B3 --&gt;C2[稳恒电流]B3 --&gt;C3[稳恒电场]ALL --&gt; A2[欧姆定律和焦耳定律的微分形式]A2 --&gt; B4[欧姆定律的微分形式]A2 --&gt; B5[焦耳定律的微分形式]ALL --&gt; A3[电动势]ALL --&gt; A4[基尔霍夫定律]ALL --&gt; A5[电容器的充放电]</code></pre><h2 id="稳恒电流">稳恒电流</h2><p>电流强度：</p><p class='katex-block katex-error ' title='ParseError: KaTeX parse error: Unexpected end of input in a macro argument, expected &#039;}&#039; at end of input: I = \frac'>I = \frac</p>]]></content>
     
     
     <categories>
