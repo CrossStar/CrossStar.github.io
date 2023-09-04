@@ -16,15 +16,15 @@
   <meta name="author" content="Sydney">
   <meta name="keywords" content="">
   
-    <meta name="description" content="复数项级数与幂级数 定义4.1.1：复数列的极限 定理4.1.1：复数列 zn&#x3D;{an+ibn}z_n &#x3D; \{a_n + ib_n\}zn​&#x3D;{an​+ibn​} 收敛的充要条件是： lim⁡n→∞an&#x3D;a,lim⁡n→∞bn&#x3D;b\lim_{n \to \infty}a_n &#x3D; a, \quad \lim_{n \to \infty}b_n &#x3D; b n→∞lim​an​&#x3D;a,n→∞lim​bn​">
+    <meta name="description" content="级数  复数项级数与幂级数  复级数  复数列的定义 柯西收敛准则   幂级数  幂级数的定义 Abel定理   Taylor级数  Taylor定理  推论   初等函数的Taylor展开式   解析函数零点的孤立性及唯一性定理  孤立零点的定义 定理4.3.1  推论1：解析函数的零点一定是孤立的 推论2：解析函数的唯一性定理   定理4.3.2：m级零点的充要条件   Laurent级数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="第四章：级数">
 <meta property="og:url" content="http://example.com/2023/07/08/%E7%AC%AC%E5%9B%9B%E7%AB%A0%EF%BC%9A%E7%BA%A7%E6%95%B0/index.html">
 <meta property="og:site_name" content="小智的秘密基地">
-<meta property="og:description" content="复数项级数与幂级数 定义4.1.1：复数列的极限 定理4.1.1：复数列 zn&#x3D;{an+ibn}z_n &#x3D; \{a_n + ib_n\}zn​&#x3D;{an​+ibn​} 收敛的充要条件是： lim⁡n→∞an&#x3D;a,lim⁡n→∞bn&#x3D;b\lim_{n \to \infty}a_n &#x3D; a, \quad \lim_{n \to \infty}b_n &#x3D; b n→∞lim​an​&#x3D;a,n→∞lim​bn​">
+<meta property="og:description" content="级数  复数项级数与幂级数  复级数  复数列的定义 柯西收敛准则   幂级数  幂级数的定义 Abel定理   Taylor级数  Taylor定理  推论   初等函数的Taylor展开式   解析函数零点的孤立性及唯一性定理  孤立零点的定义 定理4.3.1  推论1：解析函数的零点一定是孤立的 推论2：解析函数的唯一性定理   定理4.3.2：m级零点的充要条件   Laurent级数">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-07-08T00:41:21.000Z">
-<meta property="article:modified_time" content="2023-07-11T03:26:07.225Z">
+<meta property="article:modified_time" content="2023-09-04T07:22:17.940Z">
 <meta property="article:author" content="Sydney">
 <meta property="article:tag" content="notes">
 <meta name="twitter:card" content="summary_large_image">
@@ -226,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.1k 字
+          3.3k 字
         
       </span>
     
@@ -270,7 +270,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年7月11日 上午
+                    本文最后更新于：2023年9月4日 下午
                   
                 
               </p>
@@ -278,7 +278,58 @@
             
               <div class="markdown-body">
                 
-                <h2 id="复数项级数与幂级数">复数项级数与幂级数</h2>
+                <blockquote class="pullquote mindmap mindmap-md"><ul>
+<li>级数
+<ul>
+<li>复数项级数与幂级数
+<ul>
+<li>复级数
+<ul>
+<li>复数列的定义</li>
+<li>柯西收敛准则</li>
+</ul>
+</li>
+<li>幂级数
+<ul>
+<li>幂级数的定义</li>
+<li>Abel定理</li>
+</ul>
+</li>
+<li>Taylor级数
+<ul>
+<li>Taylor定理
+<ul>
+<li>推论</li>
+</ul>
+</li>
+<li>初等函数的Taylor展开式</li>
+</ul>
+</li>
+<li>解析函数零点的孤立性及唯一性定理
+<ul>
+<li>孤立零点的定义</li>
+<li>定理4.3.1
+<ul>
+<li>推论1：解析函数的零点一定是孤立的</li>
+<li>推论2：解析函数的唯一性定理</li>
+</ul>
+</li>
+<li>定理4.3.2：m级零点的充要条件</li>
+</ul>
+</li>
+<li>Laurent级数
+<ul>
+<li>Laurent定理</li>
+<li>Laurent定理和Taylor定理的不同</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="复数项级数与幂级数">复数项级数与幂级数</h2>
 <p><strong>定义4.1.1</strong>：复数列的极限</p>
 <p><strong>定理4.1.1</strong>：复数列 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>n</mi></msub><mo>=</mo><mo stretchy="false">{</mo><msub><mi>a</mi><mi>n</mi></msub><mo>+</mo><mi>i</mi><msub><mi>b</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">z_n = \{a_n + ib_n\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.044em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">i</span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">}</span></span></span></span> 收敛的充要条件是：</p>
 <p class="katex-block "><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mi>a</mi><mo separator="true">,</mo><mspace width="1em"/><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>b</mi><mi>n</mi></msub><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">\lim_{n \to \infty}a_n = a, \quad \lim_{n \to \infty}b_n = b
