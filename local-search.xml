@@ -4,24 +4,30 @@
   
   
   <entry>
-    <title></title>
-    <link href="/2023/10/17/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%82%B9%E5%AD%90/%E5%9F%BA%E4%BA%8E%E8%93%9D%E7%89%99%E7%9A%84%E8%87%AA%E8%A1%8C%E8%BD%A6%E6%A0%87%E8%AE%B0%E8%BD%AF%E4%BB%B6/"/>
-    <url>/2023/10/17/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%82%B9%E5%AD%90/%E5%9F%BA%E4%BA%8E%E8%93%9D%E7%89%99%E7%9A%84%E8%87%AA%E8%A1%8C%E8%BD%A6%E6%A0%87%E8%AE%B0%E8%BD%AF%E4%BB%B6/</url>
+    <title>前言</title>
+    <link href="/2023/10/17/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%82%B9%E5%AD%90/%E5%89%8D%E8%A8%80/"/>
+    <url>/2023/10/17/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%82%B9%E5%AD%90/%E5%89%8D%E8%A8%80/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>浙大的自行车总是成堆堆放在一起，使得我们在停车后总是很难找到自己的自行车，那么我们就应该有一个软件来解决这种问题。</p><p>由于我们基本能记得停车时的大致位置，且GPS的定位精度不高，适用于短距离，高精度的蓝牙能够适配这种环境。</p><p>自行车上安装能够和手机蓝牙连接的芯片，并配电池。</p><p>软件具有如下功能：</p><ul><li>打开面板请求获取摄像头权限，根据芯片的位置在手机屏幕上出现指示方向的箭头</li><li>当自行车出现在摄像头视野中时，标记自行车所在位置</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>常常想，我是一座孤岛。</p><p>小时候，他们总说我有各种各样的有创意的点子；但现在我却变成了剑走偏锋的典型。</p><p>与其企求他人的认同，不如尝试认同自己，把这些点子记录下来。</p><p>不管是和他人合作，还是自己一个人，我都会努力把这里的想法变成现实。</p>]]></content>
     
     
+    
+    <tags>
+      
+      <tag>inspirations</tag>
+      
+    </tags>
     
   </entry>
   
   
   
   <entry>
-    <title>前言</title>
-    <link href="/2023/10/17/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%82%B9%E5%AD%90/%E5%89%8D%E8%A8%80/"/>
-    <url>/2023/10/17/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%82%B9%E5%AD%90/%E5%89%8D%E8%A8%80/</url>
+    <title>基于蓝牙的自行车标记软件</title>
+    <link href="/2023/10/17/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%82%B9%E5%AD%90/%E5%9F%BA%E4%BA%8E%E8%93%9D%E7%89%99%E7%9A%84%E8%87%AA%E8%A1%8C%E8%BD%A6%E6%A0%87%E8%AE%B0%E8%BD%AF%E4%BB%B6/"/>
+    <url>/2023/10/17/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%82%B9%E5%AD%90/%E5%9F%BA%E4%BA%8E%E8%93%9D%E7%89%99%E7%9A%84%E8%87%AA%E8%A1%8C%E8%BD%A6%E6%A0%87%E8%AE%B0%E8%BD%AF%E4%BB%B6/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>常常想，我是一座孤岛。</p><p>小时候，他们总说我有各种各样的有创意的点子；但现在我却变成了剑走偏锋的典型。</p><p>与其企求他人的认同，不如尝试认同自己，把这些点子记录下来。</p><p>不管是和他人合作，还是自己一个人，我都会努力把这里的想法变成现实。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>浙大的自行车总是成堆堆放在一起，使得我们在停车后总是很难找到自己的自行车，那么我们就应该有一个软件来解决这种问题。</p><p>由于我们基本能记得停车时的大致位置，且GPS的定位精度不高，适用于短距离，高精度的蓝牙能够适配这种环境。</p><p>自行车上安装能够和手机蓝牙连接的芯片，并配电池。</p><p>软件具有如下功能：</p><ul><li>打开面板请求获取摄像头权限，根据芯片的位置在手机屏幕上出现指示方向的箭头</li><li>当自行车出现在摄像头视野中时，标记自行车所在位置</li></ul>]]></content>
     
     
     
