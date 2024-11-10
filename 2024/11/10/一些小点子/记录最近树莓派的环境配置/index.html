@@ -9,7 +9,7 @@
     
     <title>
         
-            为什么我想要一个孩子？ |
+            记录最近树莓派的环境配置 |
         
         小智的秘密基地
     </title>
@@ -177,7 +177,7 @@
             <div class="article-content-bottom border-box">
                 
                     <div class="article-title">
-                        为什么我想要一个孩子？
+                        记录最近树莓派的环境配置
                     </div>
                 
 
@@ -204,13 +204,13 @@
         
             <span class="meta-info-item article-create-date">
                 <i class="icon fa-solid fa-calendar-check"></i>&nbsp;
-                <span class="pc">2023-10-15 02:10:00</span>
-                <span class="mobile">2023-10-15 02:10</span>
+                <span class="pc">2024-11-10 13:50:00</span>
+                <span class="mobile">2024-11-10 13:50</span>
             </span>
 
             <span class="meta-info-item article-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="pc" data-updated="Sun Oct 15 2023 02:23:18 GMT+0800">2023-10-15 02:23:18</span>
+                <span class="pc" data-updated="Sun Nov 10 2024 14:50:39 GMT+0800">2024-11-10 14:50:39</span>
             </span>
         
 
@@ -221,7 +221,7 @@
                 <i class="icon fas fa-tags"></i>&nbsp;
                 <ul class="article-tag-ul">
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/thoughts/">thoughts</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/inspirations/">inspirations</a></li>
                         
                     
                 </ul>
@@ -245,16 +245,48 @@
                 <div class="article-content keep-markdown-body">
                     
 
-                    <p>在我们家，吃饭的时候总是没有声音的——没有话可讲。</p>
-<p>回忆我的童年，从小学到初中到高中，我的父母其实是在我的教育中严重缺位的。六岁之前，我还是爷爷奶奶带的比较多，而在小学和初中的时候，他们在约束我去上各种各样的培训班。这个时候我一直在被动地接受这个世界上的讯息。</p>
-<p>上高中之后，因为学历上或者其他方面的差异，他们便基本没有参与到我的学习和生活上来。</p>
-<p>这种缺位，其实也是我很早之前性格上的一些缺点的原因。初中，我不知道鞋带怎么系；高中，我连衣服都不会洗。自卑从童年到现在一直在我铭刻在我性格的深处。那个时候他们会说我们家里很穷，强制性地拒绝我和一切电子产品的接触，唯一和外界沟通的QQ号我的妈妈也保留着登录的权限。我那个时候能够做的只是从一个培训班到另外一个培训班，在有限的空间里面去争求仅有的一点自由——虽然那时候可能也没有这样的想法。</p>
-<p>但事情本来不应该是这样的。教育应该是启发，应该是通过我们的好奇来启发孩子们去探索这个世界的。</p>
-<p>其实我想有这样的一个孩子，其实也是为了弥补我自己的童年：把快乐带给他在某种意义上也就是把快乐带给我小时候的自己。</p>
-<p>如果我有一个孩子，我会告诉他不要迷信权威。父母的话也是可以有理由的反驳的。因为无论是什么人都没有权利决定另一个人的行为。父母的话只是一定程度上的建议，是为了规避可能有的重大的错误。</p>
-<p>如果我有一个孩子，我会带他玩游戏，会带他搭积木，会带他去森林里面探险。学习并不一定只能在课本上面，我想给他一个最纯粹的对自然的好奇体验，我会和他一起重新感受这个世界。</p>
-<p>如果我有一个孩子，我将不会给他报这样那样的补课培训班，如果他因为看了某场球类比赛，羡慕运动员的力量感，看了某种舞蹈或者听到母亲早上起来在书房弹琴，羡慕舞蹈家和母亲的艺术感，而想去学习某种球类运动，某种舞蹈，某种乐器，我会让他尝试之后选择自己最喜欢的一样去接受专业的辅导，但目的并不是说能够在这一项做的有多好，仅仅是为了帮助他能够给自己的这种向往提供一条途径。</p>
-<p>我想告诉过去的自己：不要管其他人是怎么看你的，坚定地做自己想做的事情就好了。</p>
+                    <p>实在是闲的无聊，记录一下自己最近打比赛折腾树莓派 5 的经历。</p>
+<h4 id="Raspberrypi-OS">Raspberrypi OS</h4>
+<ul>
+<li>上手当然是直接烧录官方推荐的操作系统
+<ul>
+<li>但是真的很坑！后面可能大多数问题都是这个操作系统引起的，虽然图形化操作树莓派的相关配置还是挺方便的</li>
+</ul>
+</li>
+</ul>
+<p>迫不及待配置好 SSH，VNC和基于 cpolar 的内网穿透后才开始界面的开发。</p>
+<p>因为自己要在树莓派上运行基于 <code>qfluentwifget</code> 的 <code>PyQt5</code> 界面，所以自然要配置 PyQt 相关的环境…</p>
+<p>首先用 <code>pipvenv</code> 创建一个虚拟环境，运行 <code>pip install pyqt5</code>，发现卡在 <code>preparing metadata pyproject.toml</code> 后报错，可能是 pip 版本不兼容？折腾半天后遂放弃</p>
+<p>发现系统里面已经预装了 PyQt5，尝试用 <code>pipx</code> 下载其他包会报兼容性问题，卸载原来预装的版本后尝试了其他版本后仍然不行，放弃</p>
+<p>（其实之前做信号实验也遇到过相同的问题，当时的方法是手动匹配包的版本号一个一个下 whl 文件，这次懒得折腾了）</p>
+<p>最后决定还是用 <code>miniconda</code>，安装之后用 <code>conda install pyqt</code> 后就成功了！安装其他要的各种包后运行主程序，发现找不到 wayland 插件？上网找了半天原因后用 <code>conda install qt-wayland</code> 就好了。但是…诶，我左边那个基于 <code>QWebEngineView</code> 和 Echarts 的折线图怎么没加载出来？</p>
+<ul>
+<li>尝试修改 html 文件路径后无果，或者修改为 <code>self.browser.setUrl(QUrl(&quot;https://www.baidu.com/&quot;))</code> 同样不行</li>
+<li>尝试 <code>app = QApplication(sys.argv+['--disable-seccomp-filter-sandbox'])</code> 后无果</li>
+<li>最后发现树莓派论坛上也有人有类似的问题，最后的解决方案是把操作系统换为 Ubuntu？？？那我之前配置的东西咋办？</li>
+</ul>
+<p>于是重装系统，使用系统 Ubuntu 24.04.1 LTS</p>
+<h4 id="Ubuntu">Ubuntu</h4>
+<p>首先得装上 SSH，因为 Ubuntu 没有预装 <code>openssh-server</code> 所以还得自己手动装一个，不过也不难，然后把 VSCode 和 XShell 之类的软件连上去就好了。</p>
+<p>吸取教训，配置环境首先先把 <code>miniconda</code> 装上，然后装上各种要的包，运行主文件，界面很顺利就出来了？（为什么这里没有报找不到 wayland 插件的问题我也不知道，可能是原来的系统预装的 Qt 会自动把插件的环境变量配置到奇奇怪怪的地方？）</p>
+<p>但是现在左边的折线图同样没有渲染出来，看了看 html 路径没问题之后再次尝试 <code>app = QApplication(sys.arg +['--disable-seccomp-filter-sandbox'])</code> 就成功了！右边用 FIFOCache 做的流式绘图好像比原来 ROS 系统上的还要顺滑一些？不知道是什么原因。</p>
+<p>但是如果要远程开发的话还得能在本地电脑能显示界面才行，如果直接在 VSCode上运行界面程序会报错 <code>xcb</code> 插件之类的有问题，上网查了一下可能是 X Server 的原因，在 XShell 中运行让 XManager 转发就好了。但是好像效果不太理想，那个流式绘图界面在本地电脑上卡卡的，也太丑了。</p>
+<p>果然还是得用 VNC 弄远程桌面。装上 aarm64 的 <code>realvnc-vnc-server</code> 之后发现怎么都打不开服务程序？</p>
+<ul>
+<li>重启后无果</li>
+<li>尝试换为 <code>tigervnc-standalone-server</code> 后，运行 <code>vncserver</code> 命令行卡死
+<ul>
+<li>装上树莓派的设置包，运行 <code>sudo raspi-config</code>，在界面里尝试打开 VNC 也会报错，看看命令行的消息还是得用 RealVNC 才行（但这个应该不是根本原因）</li>
+</ul>
+</li>
+<li>又翻遍树莓派论坛，找了几天用各种有关 Ubuntu，VNC，Raspberrypi 关键词，最后终于找到可能得禁用 wayland 才行
+<ul>
+<li>运行 <code>sudo nano /etc/gdm3/custom.conf</code>，把 <code>WaylandEnable=false</code> 取消注释，然后常规运行各种类似开机启动的命令，最后重启就好了！（这次的远程桌面同样要比原来的系统更丝滑一些的说</li>
+</ul>
+</li>
+</ul>
+<p>到这里树莓派基本配置大概就折腾完了，内网穿透好像也不太需要因为校园网也可以直接 SSH 到的来着。</p>
+<p>（话说最近也在弄和 PyTorch 相关的环境，但是好像远远没有这个难配，用 <code>nvidia-smi</code> 查看一下自己的 CUDA 版本号在官网上用 <code>conda</code> 下载对应版本的就好了，一路下来也挺顺利的）</p>
 
                 </div>
 
@@ -266,7 +298,7 @@
                             <ul class="post-tags-box border-box">
                                 
                                     <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/thoughts/">thoughts</a>
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/inspirations/">inspirations</a>
                                     </li>
                                 
                             </ul>
@@ -282,31 +314,15 @@
                 
                     <div class="article-nav">
                         
-                            <div class="article-prev">
-                                <a class="prev"
-                                   rel="prev"
-                                   href="/2023/10/17/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%82%B9%E5%AD%90/%E5%89%8D%E8%A8%80/"
-                                   title="前言"
-                                >
-                                    <span class="left arrow-icon flex-center">
-                                      <i class="fas fa-chevron-left"></i>
-                                    </span>
-                                            <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">前言</span>
-                                        <span class="post-nav-item">上一篇</span>
-                                    </span>
-                                </a>
-                            </div>
-                        
                         
                             <div class="article-next">
                                 <a class="next"
                                    rel="next"
-                                   href="/2023/10/15/%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%82%B9%E5%AD%90/%E7%9F%A5%E8%AF%86%E5%89%AA%E8%97%8F%E8%BD%AF%E4%BB%B6/"
-                                   title="知识剪藏软件"
+                                   href="/2024/06/30/thoughts/%E5%9B%B0%E5%A2%83/"
+                                   title="困境"
                                 >
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">知识剪藏软件</span>
+                                        <span class="post-nav-title-item text-ellipsis">困境</span>
                                         <span class="post-nav-item">下一篇</span>
                                     </span>
                                             <span class="right arrow-icon flex-center">
@@ -334,7 +350,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        
+        <ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Raspberrypi-OS"><span class="nav-text">Raspberrypi OS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Ubuntu"><span class="nav-text">Ubuntu</span></a></li></ol>
     </div>
 </div>
 
@@ -493,7 +509,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        
+        <ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Raspberrypi-OS"><span class="nav-text">Raspberrypi OS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Ubuntu"><span class="nav-text">Ubuntu</span></a></li></ol>
     </div>
 </div>
 
